@@ -340,30 +340,30 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <h3 className="mb-3 font-semibold text-foreground">
+                <h3 className="mb-3 text-base font-medium leading-snug text-foreground">
                   Video e imágenes generadas con IA para cada campaña
                 </h3>
-                <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                <p className="mb-4 flex-1 text-sm font-light leading-7 text-foreground/70">
                   Higgsfield genera automáticamente el material visual del kit viral de cada
                   campaña: imágenes para Instagram, miniaturas para WhatsApp y videos cortos
                   de impacto. Sin diseñador, sin tiempo de espera.
                 </p>
 
-                <div className="rounded-xl border border-border bg-secondary/60 p-4">
-                  <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                <div className="rounded-xl border border-border bg-secondary/40 p-4">
+                  <p className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
                     Flujo
                   </p>
-                  <div className="flex flex-col gap-1.5 text-sm text-foreground">
-                    <span className="flex items-center gap-2">
-                      <span className="h-1.5 w-1.5 rounded-full shrink-0" style={{ background: 'var(--accent-blue)' }} />
+                  <div className="flex flex-col gap-2 text-sm font-light text-foreground/80">
+                    <span className="flex items-center gap-2.5">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: 'var(--accent-blue)' }} />
                       La ONG crea la campaña
                     </span>
-                    <span className="flex items-center gap-2">
-                      <span className="h-1.5 w-1.5 rounded-full shrink-0" style={{ background: 'var(--accent-blue)' }} />
+                    <span className="flex items-center gap-2.5">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: 'var(--accent-blue)' }} />
                       Higgsfield genera el kit visual
                     </span>
-                    <span className="flex items-center gap-2">
-                      <span className="h-1.5 w-1.5 rounded-full shrink-0" style={{ background: 'var(--accent-blue)' }} />
+                    <span className="flex items-center gap-2.5">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: 'var(--accent-blue)' }} />
                       El material queda listo para difundir
                     </span>
                   </div>
@@ -385,30 +385,30 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <h3 className="mb-3 font-semibold text-foreground">
+                <h3 className="mb-3 text-base font-medium leading-snug text-foreground">
                   El contenido llega por WhatsApp y se publica solo en tus redes
                 </h3>
-                <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                <p className="mb-4 flex-1 text-sm font-light leading-7 text-foreground/70">
                   Hermes Kapso actúa como puente entre Higgsfield y el usuario. Una vez generado
                   el contenido, lo devuelve al promotor directamente por WhatsApp — con el texto,
                   la imagen y el link personalizado. Con un toque, el promotor puede publicarlo
                   en sus redes sociales sin salir del chat.
                 </p>
 
-                <div className="rounded-xl border border-border bg-secondary/60 p-4">
-                  <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                <div className="rounded-xl border border-border bg-secondary/40 p-4">
+                  <p className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
                     Flujo
                   </p>
-                  <div className="flex flex-col gap-1.5 text-sm text-foreground">
-                    <span className="flex items-center gap-2">
+                  <div className="flex flex-col gap-2 text-sm font-light text-foreground/80">
+                    <span className="flex items-center gap-2.5">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                       Kapso recibe el kit de Higgsfield
                     </span>
-                    <span className="flex items-center gap-2">
+                    <span className="flex items-center gap-2.5">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                       Lo entrega al promotor por WhatsApp
                     </span>
-                    <span className="flex items-center gap-2">
+                    <span className="flex items-center gap-2.5">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                       El promotor publica en sus redes en un toque
                     </span>
@@ -434,30 +434,30 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <h3 className="mb-3 font-semibold text-foreground">
+                <h3 className="mb-3 text-base font-medium leading-snug text-foreground">
                   Tu donación en efectivo genera rendimientos hasta que el proyecto se completa
                 </h3>
-                <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                <p className="mb-4 flex-1 text-sm font-light leading-7 text-foreground/70">
                   El donante paga en efectivo a través de Mercado Pago MCP. P2P.me convierte
                   ese pago en un aporte a un pool de liquidez que genera rendimientos mientras
                   el proyecto acumula su meta — igual que Kickstarter, pero el dinero trabaja.
                   Cuando el hito se verifica, los fondos se liberan a la ONG.
                 </p>
 
-                <div className="rounded-xl border border-border bg-secondary/60 p-4">
-                  <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                <div className="rounded-xl border border-border bg-secondary/40 p-4">
+                  <p className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
                     Flujo
                   </p>
-                  <div className="flex flex-col gap-1.5 text-sm text-foreground">
-                    <span className="flex items-center gap-2">
+                  <div className="flex flex-col gap-2 text-sm font-light text-foreground/80">
+                    <span className="flex items-center gap-2.5">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: 'var(--terracotta)' }} />
                       Donante paga en efectivo vía Mercado Pago
                     </span>
-                    <span className="flex items-center gap-2">
+                    <span className="flex items-center gap-2.5">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: 'var(--terracotta)' }} />
                       P2P.me deposita en pool de liquidez
                     </span>
-                    <span className="flex items-center gap-2">
+                    <span className="flex items-center gap-2.5">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: 'var(--terracotta)' }} />
                       Hito verificado &rarr; fondos + rendimiento a la ONG
                     </span>
