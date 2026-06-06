@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MessageCircle, Camera, Briefcase, Mail, Link2, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import type { CampaignPromoter, ContentAsset } from '@/types/campaign';
@@ -12,11 +12,8 @@ interface SharePanelProps {
   contentAssets: ContentAsset[];
 }
 
-const APP_URL =
-  typeof window !== 'undefined' ? window.location.origin : 'https://halketon.vercel.app';
-
-function buildShareUrl(slug: string, refCode: string) {
-  return `${APP_URL}/c/${slug}?ref=${refCode}`;
+function buildShareUrl(origin: string, slug: string, refCode: string) {
+  return `${origin}/c/${slug}?ref=${refCode}`;
 }
 
 export function SharePanel({
@@ -25,10 +22,16 @@ export function SharePanel({
   promoters,
   contentAssets,
 }: SharePanelProps) {
+  const [origin, setOrigin] = useState('');
   const [selectedPromoter, setSelectedPromoter] = useState<CampaignPromoter | null>(
     promoters[0] ?? null
   );
   const [copiedChannel, setCopiedChannel] = useState<string | null>(null);
+
+  // Resolve origin only on client to avoid SSR/client mismatch
+  useEffect(() => {
+    setOrigin(window.location.origin);
+  }, []);
 
   const getContent = (channel: string) =>
     contentAssets.find((a) => a.channel === channel)?.content ?? '';
@@ -36,8 +39,8 @@ export function SharePanel({
   function buildPersonalized(content: string): string {
     const name = selectedPromoter?.name ?? 'Un amigo';
     const link = selectedPromoter
-      ? buildShareUrl(campaignSlug, selectedPromoter.referral_code)
-      : `${APP_URL}/c/${campaignSlug}`;
+      ? buildShareUrl(origin, campaignSlug, selectedPromoter.referral_code)
+      : `${origin}/c/${campaignSlug}`;
     return content.replace('{{PROMOTER_NAME}}', name) + `\n${link}`;
   }
 
@@ -56,8 +59,8 @@ export function SharePanel({
 
   function shareOnLinkedIn() {
     const url = selectedPromoter
-      ? buildShareUrl(campaignSlug, selectedPromoter.referral_code)
-      : `${APP_URL}/c/${campaignSlug}`;
+      ? buildShareUrl(origin, campaignSlug, selectedPromoter.referral_code)
+      : `${origin}/c/${campaignSlug}`;
     window.open(
       `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
       '_blank'
@@ -76,8 +79,8 @@ export function SharePanel({
   }
 
   const shareLink = selectedPromoter
-    ? buildShareUrl(campaignSlug, selectedPromoter.referral_code)
-    : `${APP_URL}/c/${campaignSlug}`;
+    ? buildShareUrl(origin, campaignSlug, selectedPromoter.referral_code)
+    : `${origin}/c/${campaignSlug}`;
 
   return (
     <section className="rounded-2xl border border-border bg-card p-6">
