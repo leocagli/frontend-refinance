@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { CheckCircle2, Share2 } from 'lucide-react';
 import { getMockCampaignBySlug } from '@/lib/mock-campaigns';
@@ -21,8 +22,15 @@ export default async function ThanksPage({
     <main className="min-h-screen bg-background">
       <nav className="border-b border-border">
         <div className="mx-auto flex max-w-lg items-center px-4 py-3">
-          <Link href="/" className="font-serif text-sm font-semibold text-primary">
-            Refinance
+          <Link href="/" className="flex items-center gap-1.5">
+            <Image
+              src="/images/refinance-logo.png"
+              alt="ReFinance"
+              width={20}
+              height={20}
+              className="h-5 w-5 object-contain"
+            />
+            <span className="text-sm font-extrabold text-primary">Re<span className="text-foreground">Finance</span></span>
           </Link>
         </div>
       </nav>

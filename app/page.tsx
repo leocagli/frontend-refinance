@@ -23,12 +23,16 @@ export default function HomePage() {
       <header className="sticky top-0 z-30 border-b border-border bg-background/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <Heart className="h-4 w-4 fill-current text-primary-foreground" />
-            </div>
-            <span className="font-serif text-xl font-bold tracking-tight text-foreground">
-              Refinance
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/images/refinance-logo.png"
+              alt="ReFinance"
+              width={32}
+              height={32}
+              className="h-8 w-8 object-contain"
+            />
+            <span className="text-xl font-extrabold tracking-tight text-primary">
+              Re<span className="text-foreground">Finance</span>
             </span>
           </Link>
 
@@ -110,7 +114,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mb-10 max-w-lg text-lg leading-relaxed text-foreground/70">
-            Refinance conecta donantes con causas comunitarias reales. Cada campaña libera
+            ReFinance conecta donantes con causas comunitarias reales. Cada campaña libera
             fondos por hitos verificados con evidencia pública — sin caja negra.
           </p>
 
@@ -163,7 +167,7 @@ export default function HomePage() {
                 Simplificar la donación con responsabilidad real
               </h2>
               <p className="mb-4 leading-relaxed text-background/70">
-                En Refinance creemos que donar debe ser tan fácil como pagar un café — y tan
+                En ReFinance creemos que donar debe ser tan fácil como pagar un café — y tan
                 transparente como una factura. Conectamos ONGs con sus comunidades sin
                 intermediarios opacos.
               </p>
@@ -304,7 +308,7 @@ export default function HomePage() {
               Tres tecnologías que lo hacen posible
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
-              Refinance no es solo una plataforma de donaciones. Integra generación de contenido
+              ReFinance no es solo una plataforma de donaciones. Integra generación de contenido
               con IA, distribución por WhatsApp y un sistema financiero que hace rendir cada
               peso mientras el proyecto se completa.
             </p>
@@ -578,16 +582,16 @@ export default function HomePage() {
           <div className="flex flex-col divide-y divide-border">
             {[
               {
-                q: '¿Cuánto cobra Refinance por cada donación?',
+                q: '¿Cuánto cobra ReFinance por cada donación?',
                 a: 'Cero comisión de plataforma. Solo se aplica el costo de procesamiento del medio de pago (Mercado Pago).',
               },
               {
                 q: '¿Cómo se verifican los hitos?',
-                a: 'La ONG sube evidencia pública (facturas, fotos, informes). El equipo de Refinance valida antes de liberar el tramo de fondos correspondiente.',
+                a: 'La ONG sube evidencia pública (facturas, fotos, informes). El equipo de ReFinance valida antes de liberar el tramo de fondos correspondiente.',
               },
               {
                 q: '¿Qué es Higgsfield y por qué lo usan?',
-                a: 'Higgsfield es un motor de generación de imágenes y video con IA. Refinance lo usa para crear automáticamente el kit visual de cada campaña — imágenes para Instagram, miniaturas y videos cortos — sin necesitar un diseñador.',
+                a: 'Higgsfield es un motor de generación de imágenes y video con IA. ReFinance lo usa para crear automáticamente el kit visual de cada campaña — imágenes para Instagram, miniaturas y videos cortos — sin necesitar un diseñador.',
               },
               {
                 q: '¿Cómo funciona Hermes Kapso?',
@@ -624,10 +628,14 @@ export default function HomePage() {
       <footer className="border-t border-border bg-card">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-muted-foreground sm:flex-row">
           <div className="flex items-center gap-2">
-            <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary">
-              <Heart className="h-3 w-3 fill-current text-primary-foreground" />
-            </div>
-            <span className="font-serif font-bold text-foreground">Refinance</span>
+            <Image
+              src="/images/refinance-logo.png"
+              alt="ReFinance"
+              width={24}
+              height={24}
+              className="h-6 w-6 object-contain"
+            />
+            <span className="font-bold text-primary">Re<span className="text-foreground">Finance</span></span>
             <span>— Donaciones con impacto verificable</span>
           </div>
           <span>Rosario &amp; CABA, Argentina</span>

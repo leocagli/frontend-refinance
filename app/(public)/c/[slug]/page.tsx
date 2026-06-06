@@ -70,11 +70,15 @@ export default async function CampaignLanding({
       {/* ── Sticky nav ── */}
       <nav className="sticky top-0 z-30 border-b border-border bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-          <Link href="/" className="flex items-center gap-2 text-sm font-semibold text-foreground">
-            <div className="flex h-6 w-6 items-center justify-center rounded bg-primary">
-              <Heart className="h-3 w-3 fill-current text-primary-foreground" />
-            </div>
-            <span className="font-serif">Refinance</span>
+          <Link href="/" className="flex items-center gap-1.5">
+            <Image
+              src="/images/refinance-logo.png"
+              alt="ReFinance"
+              width={24}
+              height={24}
+              className="h-6 w-6 object-contain"
+            />
+            <span className="text-sm font-extrabold text-primary">Re<span className="text-foreground">Finance</span></span>
           </Link>
           <div className="flex items-center gap-2">
             <span className="hidden rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary sm:inline-block">
@@ -490,7 +494,7 @@ export default async function CampaignLanding({
               </>
             )}
           </p>
-          <p className="mt-1">Powered by <span className="font-serif font-semibold">Refinance</span> — Donaciones con impacto verificable</p>
+          <p className="mt-1">Powered by <span className="font-serif font-semibold">ReFinance</span> — Donaciones con impacto verificable</p>
         </div>
       </footer>
     </main>
