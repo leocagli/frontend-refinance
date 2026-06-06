@@ -21,8 +21,8 @@ export default async function ThanksPage({
     <main className="min-h-screen bg-background">
       <nav className="border-b border-border">
         <div className="mx-auto flex max-w-lg items-center px-4 py-3">
-          <Link href="/" className="text-sm font-semibold text-primary">
-            Halketon
+          <Link href="/" className="font-serif text-sm font-semibold text-primary">
+            Refinance
           </Link>
         </div>
       </nav>

@@ -10,7 +10,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             <div className="flex h-7 w-7 items-center justify-center rounded-md bg-primary">
               <LayoutDashboard className="h-4 w-4 text-primary-foreground" />
             </div>
-            <span className="font-semibold text-foreground">Halketon</span>
+            <span className="font-serif font-semibold text-foreground">Refinance</span>
           </Link>
           <span className="text-xs text-muted-foreground">Panel de gestión</span>
         </div>

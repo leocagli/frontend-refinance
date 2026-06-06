@@ -74,7 +74,7 @@ export default async function CampaignLanding({
             <div className="flex h-6 w-6 items-center justify-center rounded bg-primary">
               <Heart className="h-3 w-3 fill-current text-primary-foreground" />
             </div>
-            En Masa Social
+            <span className="font-serif">Refinance</span>
           </Link>
           <div className="flex items-center gap-2">
             <span className="hidden rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary sm:inline-block">
@@ -490,7 +490,7 @@ export default async function CampaignLanding({
               </>
             )}
           </p>
-          <p className="mt-1">Powered by En Masa Social — Donaciones con impacto verificable</p>
+          <p className="mt-1">Powered by <span className="font-serif font-semibold">Refinance</span> — Donaciones con impacto verificable</p>
         </div>
       </footer>
     </main>
