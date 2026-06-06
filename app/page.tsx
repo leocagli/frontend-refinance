@@ -85,13 +85,25 @@ export default function HomePage() {
 
         {/* Hero content */}
         <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-start justify-center px-6 pt-32 pb-40">
+
+          {/* Frosted glass text box */}
+          <div
+            className="rounded-2xl p-8 sm:p-10"
+            style={{
+              background: 'rgba(255,255,255,0.72)',
+              backdropFilter: 'blur(18px)',
+              WebkitBackdropFilter: 'blur(18px)',
+              border: '1px solid rgba(255,255,255,0.5)',
+              boxShadow: '0 8px 40px rgba(27,58,107,0.12)',
+            }}
+          >
           {/* Eyebrow pill */}
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             Donaciones con impacto verificable
           </span>
 
-          {/* Headline — Homie uses massive serif */}
+          {/* Headline */}
           <h1
             className="mb-6 font-serif font-black leading-[1.05] tracking-tight text-foreground"
             style={{ fontSize: 'clamp(42px, 7vw, 88px)' }}
@@ -105,7 +117,7 @@ export default function HomePage() {
             <span style={{ color: 'var(--accent-blue)' }}>verificado.</span>
           </h1>
 
-          <p className="mb-10 max-w-lg text-lg leading-relaxed text-foreground/70">
+          <p className="mb-10 max-w-lg text-lg leading-relaxed text-foreground/80">
             ReFinance conecta donantes con causas comunitarias reales. Cada campaña libera
             fondos por hitos verificados con evidencia pública — sin caja negra.
           </p>
@@ -120,7 +132,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/dashboard"
-              className="flex items-center gap-1.5 rounded-full border border-border bg-card/80 px-8 py-3.5 text-base font-semibold text-foreground backdrop-blur-sm transition-colors hover:border-primary hover:text-primary"
+              className="flex items-center gap-1.5 rounded-full border border-primary/30 bg-white/60 px-8 py-3.5 text-base font-semibold text-foreground backdrop-blur-sm transition-colors hover:border-primary hover:text-primary"
             >
               Soy una ONG
               <ArrowRight className="h-4 w-4" />
@@ -133,6 +145,7 @@ export default function HomePage() {
             campañas en{' '}
             <span className="font-semibold text-foreground">Rosario y CABA</span>
           </p>
+          </div>{/* end glass box */}
         </div>
       </section>
 
