@@ -37,6 +37,7 @@ export default function HomePage() {
             {[
               { label: 'Misión', href: '#mission' },
               { label: 'Cómo funciona', href: '#features' },
+              { label: 'Tecnología', href: '#tecnologia' },
               { label: 'Campañas', href: '#campaigns' },
               { label: 'FAQ', href: '#faq' },
             ].map(({ label, href }) => (
@@ -283,6 +284,215 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Technology integrations ── */}
+      <section id="tecnologia" className="relative scroll-mt-20 overflow-hidden border-t border-border">
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden select-none" aria-hidden>
+          <p
+            className="font-serif font-black uppercase tracking-tighter text-foreground/[0.035]"
+            style={{ fontSize: 'clamp(60px, 15vw, 200px)', whiteSpace: 'nowrap' }}
+          >
+            TECNOLOGÍA
+          </p>
+        </div>
+
+        <div className="relative mx-auto max-w-6xl px-6 py-16">
+          <div className="mb-12 text-center">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-primary">
+              Infraestructura
+            </p>
+            <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl">
+              Tres tecnologías que lo hacen posible
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+              Refinance no es solo una plataforma de donaciones. Integra generación de contenido
+              con IA, distribución por WhatsApp y un sistema financiero que hace rendir cada
+              peso mientras el proyecto se completa.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+
+            {/* ── Higgsfield ── */}
+            <div className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition-shadow hover:shadow-lg">
+              {/* Color accent bar */}
+              <div className="h-1.5 w-full" style={{ background: 'var(--accent-blue)' }} />
+              <div className="flex flex-1 flex-col p-8">
+                {/* Badge */}
+                <div className="mb-6 flex items-center gap-3">
+                  <div
+                    className="flex h-11 w-11 items-center justify-center rounded-2xl text-lg font-black text-white"
+                    style={{ background: 'var(--accent-blue)' }}
+                  >
+                    H
+                  </div>
+                  <div>
+                    <p className="font-serif text-lg font-bold text-foreground">Higgsfield</p>
+                    <p className="text-xs text-muted-foreground">Generación de contenido IA</p>
+                  </div>
+                </div>
+
+                <h3 className="mb-3 font-semibold text-foreground">
+                  Video e imágenes generadas con IA para cada campaña
+                </h3>
+                <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  Higgsfield genera automáticamente el material visual del kit viral de cada
+                  campaña: imágenes para Instagram, miniaturas para WhatsApp y videos cortos
+                  de impacto. Sin diseñador, sin tiempo de espera.
+                </p>
+
+                <div className="rounded-xl border border-border bg-secondary/60 p-4">
+                  <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    Flujo
+                  </p>
+                  <div className="flex flex-col gap-1.5 text-sm text-foreground">
+                    <span className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full shrink-0" style={{ background: 'var(--accent-blue)' }} />
+                      La ONG crea la campaña
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full shrink-0" style={{ background: 'var(--accent-blue)' }} />
+                      Higgsfield genera el kit visual
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full shrink-0" style={{ background: 'var(--accent-blue)' }} />
+                      El material queda listo para difundir
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ── Hermes Kapso ── */}
+            <div className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition-shadow hover:shadow-lg">
+              <div className="h-1.5 w-full bg-primary" />
+              <div className="flex flex-1 flex-col p-8">
+                <div className="mb-6 flex items-center gap-3">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary text-lg font-black text-primary-foreground">
+                    K
+                  </div>
+                  <div>
+                    <p className="font-serif text-lg font-bold text-foreground">Hermes Kapso</p>
+                    <p className="text-xs text-muted-foreground">Distribución inteligente</p>
+                  </div>
+                </div>
+
+                <h3 className="mb-3 font-semibold text-foreground">
+                  El contenido llega por WhatsApp y se publica solo en tus redes
+                </h3>
+                <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  Hermes Kapso actúa como puente entre Higgsfield y el usuario. Una vez generado
+                  el contenido, lo devuelve al promotor directamente por WhatsApp — con el texto,
+                  la imagen y el link personalizado. Con un toque, el promotor puede publicarlo
+                  en sus redes sociales sin salir del chat.
+                </p>
+
+                <div className="rounded-xl border border-border bg-secondary/60 p-4">
+                  <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    Flujo
+                  </p>
+                  <div className="flex flex-col gap-1.5 text-sm text-foreground">
+                    <span className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      Kapso recibe el kit de Higgsfield
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      Lo entrega al promotor por WhatsApp
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      El promotor publica en sus redes en un toque
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ── P2P.me + Mercado Pago MCP ── */}
+            <div className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition-shadow hover:shadow-lg">
+              <div className="h-1.5 w-full" style={{ background: 'var(--terracotta)' }} />
+              <div className="flex flex-1 flex-col p-8">
+                <div className="mb-6 flex items-center gap-3">
+                  <div
+                    className="flex h-11 w-11 items-center justify-center rounded-2xl text-lg font-black text-white"
+                    style={{ background: 'var(--terracotta)' }}
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p className="font-serif text-lg font-bold text-foreground">P2P.me &times; Mercado Pago</p>
+                    <p className="text-xs text-muted-foreground">Rendimientos mientras esperás</p>
+                  </div>
+                </div>
+
+                <h3 className="mb-3 font-semibold text-foreground">
+                  Tu donación en efectivo genera rendimientos hasta que el proyecto se completa
+                </h3>
+                <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  El donante paga en efectivo a través de Mercado Pago MCP. P2P.me convierte
+                  ese pago en un aporte a un pool de liquidez que genera rendimientos mientras
+                  el proyecto acumula su meta — igual que Kickstarter, pero el dinero trabaja.
+                  Cuando el hito se verifica, los fondos se liberan a la ONG.
+                </p>
+
+                <div className="rounded-xl border border-border bg-secondary/60 p-4">
+                  <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    Flujo
+                  </p>
+                  <div className="flex flex-col gap-1.5 text-sm text-foreground">
+                    <span className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: 'var(--terracotta)' }} />
+                      Donante paga en efectivo vía Mercado Pago
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: 'var(--terracotta)' }} />
+                      P2P.me deposita en pool de liquidez
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: 'var(--terracotta)' }} />
+                      Hito verificado &rarr; fondos + rendimiento a la ONG
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Integration diagram — how the 3 connect */}
+          <div className="mt-10 rounded-2xl border border-border bg-foreground px-8 py-7">
+            <p className="mb-4 text-center text-xs font-semibold uppercase tracking-widest text-background/50">
+              Cómo se integran
+            </p>
+            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-0">
+              {[
+                { name: 'Higgsfield', label: 'Genera el contenido visual', color: 'var(--accent-blue)' },
+                { name: 'Hermes Kapso', label: 'Distribuye por WhatsApp + redes', color: 'var(--primary)' },
+                { name: 'P2P.me', label: 'Gestiona el dinero en el pool', color: 'var(--terracotta)' },
+              ].map(({ name, label, color }, i) => (
+                <div key={name} className="flex items-center gap-0 sm:flex-row">
+                  <div className="flex flex-col items-center gap-1.5 px-6 text-center">
+                    <div
+                      className="flex h-9 w-9 items-center justify-center rounded-full text-sm font-black text-white"
+                      style={{ background: color }}
+                    >
+                      {i + 1}
+                    </div>
+                    <p className="font-serif text-sm font-bold text-background">{name}</p>
+                    <p className="text-xs text-background/60">{label}</p>
+                  </div>
+                  {i < 2 && (
+                    <div className="hidden text-background/30 sm:block">
+                      <ArrowRight className="h-5 w-5" />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Campaign carousel — Homie "Properties" section ── */}
       <section id="campaigns" className="scroll-mt-20 border-t border-border">
         <div className="mx-auto max-w-6xl px-6 py-16">
@@ -369,19 +579,31 @@ export default function HomePage() {
             {[
               {
                 q: '¿Cuánto cobra Refinance por cada donación?',
-                a: 'Cero comisión de plataforma. Solo se aplica el costo de procesamiento del medio de pago.',
+                a: 'Cero comisión de plataforma. Solo se aplica el costo de procesamiento del medio de pago (Mercado Pago).',
               },
               {
                 q: '¿Cómo se verifican los hitos?',
                 a: 'La ONG sube evidencia pública (facturas, fotos, informes). El equipo de Refinance valida antes de liberar el tramo de fondos correspondiente.',
               },
               {
+                q: '¿Qué es Higgsfield y por qué lo usan?',
+                a: 'Higgsfield es un motor de generación de imágenes y video con IA. Refinance lo usa para crear automáticamente el kit visual de cada campaña — imágenes para Instagram, miniaturas y videos cortos — sin necesitar un diseñador.',
+              },
+              {
+                q: '¿Cómo funciona Hermes Kapso?',
+                a: 'Hermes Kapso es el sistema de distribución inteligente. Una vez que Higgsfield genera el contenido, Kapso lo devuelve al promotor directamente por WhatsApp con el texto, la imagen y el link personalizado. Desde ahí, el promotor puede publicarlo en sus redes sociales en un solo toque.',
+              },
+              {
+                q: '¿Qué pasa con mi dinero mientras la campaña no llega a la meta?',
+                a: 'El pago en efectivo hecho vía Mercado Pago MCP es gestionado por P2P.me, que lo deposita en un pool de liquidez. Ese dinero genera rendimientos mientras el proyecto acumula su objetivo — similar a Kickstarter, pero el capital no está inactivo. Cuando se verifica el hito, los fondos más el rendimiento acumulado se liberan a la ONG.',
+              },
+              {
                 q: '¿Puedo seguir el impacto de mi donación?',
-                a: 'Sí. Cada campaña tiene una página pública con el estado de cada hito y la evidencia de validación.',
+                a: 'Sí. Cada campaña tiene una página pública con el estado de cada hito, la evidencia de validación y el rendimiento generado en el pool durante el período de recaudación.',
               },
               {
                 q: '¿Cómo funcionan los links personalizados de difusión?',
-                a: 'Al donar recibís un link con tu código de referido. Cuando alguien dona a través de ese link, tu nombre aparece como promotor en la campaña.',
+                a: 'Al donar recibís un link con tu código de referido. Cuando alguien dona a través de ese link, tu nombre aparece como promotor en la campaña. Hermes Kapso también te entrega ese link automáticamente por WhatsApp con contenido listo para compartir.',
               },
             ].map(({ q, a }) => (
               <details key={q} className="group py-5">
