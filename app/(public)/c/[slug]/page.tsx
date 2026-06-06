@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { ReFinanceLogo } from '@/components/refinance-logo';
 import Link from 'next/link';
 import {
   Heart,
@@ -70,15 +71,8 @@ export default async function CampaignLanding({
       {/* ── Sticky nav ── */}
       <nav className="sticky top-0 z-30 border-b border-border bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-          <Link href="/" className="flex items-center gap-1.5">
-            <Image
-              src="/images/refinance-logo.png"
-              alt="ReFinance"
-              width={24}
-              height={24}
-              className="h-6 w-6 object-contain"
-            />
-            <span className="text-sm font-extrabold text-primary">Re<span className="text-foreground">Finance</span></span>
+          <Link href="/">
+            <ReFinanceLogo size={24} />
           </Link>
           <div className="flex items-center gap-2">
             <span className="hidden rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary sm:inline-block">

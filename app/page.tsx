@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { ReFinanceLogo } from '@/components/refinance-logo';
 import {
   ArrowRight,
   CheckCircle2,
@@ -20,20 +21,11 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background font-sans">
       {/* ── Navbar ── */}
-      <header className="sticky top-0 z-30 border-b border-border bg-background/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <header className="sticky top-0 z-50 border-b border-border bg-card shadow-sm">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/images/refinance-logo.png"
-              alt="ReFinance"
-              width={32}
-              height={32}
-              className="h-8 w-8 object-contain"
-            />
-            <span className="text-xl font-extrabold tracking-tight text-primary">
-              Re<span className="text-foreground">Finance</span>
-            </span>
+          <Link href="/">
+            <ReFinanceLogo size={30} />
           </Link>
 
           {/* Nav links */}
@@ -628,14 +620,7 @@ export default function HomePage() {
       <footer className="border-t border-border bg-card">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-muted-foreground sm:flex-row">
           <div className="flex items-center gap-2">
-            <Image
-              src="/images/refinance-logo.png"
-              alt="ReFinance"
-              width={24}
-              height={24}
-              className="h-6 w-6 object-contain"
-            />
-            <span className="font-bold text-primary">Re<span className="text-foreground">Finance</span></span>
+            <ReFinanceLogo size={22} />
             <span>— Donaciones con impacto verificable</span>
           </div>
           <span>Rosario &amp; CABA, Argentina</span>
